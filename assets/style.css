@@ -12,6 +12,7 @@
 body{
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     background-color: #000;
+    color: #ffffff;
 }
 
 .navbar{
@@ -21,6 +22,8 @@ body{
     display: flex;
     z-index: 1;
     position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
 }
 
 .navWhite{
@@ -46,26 +49,20 @@ body{
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    margin: auto;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     height: 80%;
-    flex-direction: column;
-    padding: 0 50px;
+    flex-direction: row;
+    padding: 50vh 100px;
+    width: 60%;
 }
 
-.catchline{
-    display: flex;
-    font-size: 5rem;
-    text-align: center;
+.heading{
+    /* display: flex; */
+    font-size: 4rem;
+    text-align: start;
     font-weight: 800;
 }
 
-.subtext{
-    display: flex;
-    font-size: 25px;
-    text-align: center;
-    font-weight: 600;
-}
 .nav-list{
     display: flex;
     margin-right: 20px;
@@ -117,6 +114,13 @@ body{
     /* top: -75px; */
     /* z-index: -1; */
     margin-bottom: 3rem;
+}
+
+.intro{
+    padding: 0 100px;
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0 25vh 0;
 }
 
 @media only screen and (max-width: 750px){
