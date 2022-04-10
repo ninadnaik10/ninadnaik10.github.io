@@ -12,7 +12,7 @@
 body{
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     background-color: #000;
-    color: #ffffff;
+    color: #e8e5e3;
 }
 
 .navbar{
@@ -48,25 +48,44 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: #e8e5e3;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     height: 80%;
-    flex-direction: row;
     padding: 50vh 100px;
+    padding-bottom: 0;
     width: 60%;
+    flex-direction: column;
 }
 
 .heading{
-    /* display: flex; */
+    display: block;
     font-size: 4rem;
     text-align: start;
     font-weight: 800;
+    margin-bottom: 20vh;
+}
+
+.arrow{
+    display: flex;
+    height: 25px;
+    width: 25px;
+    margin-left: 40vw;
+}
+
+.front-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.side-column{
+    display: flex;
+    width: auto;
+    height: 100%;
 }
 
 .nav-list{
     display: flex;
-    margin-right: 20px;
-    justify-content: right;
+    padding: 0 100px 0 654px;
     /* background-color: antiquewhite; */
     /* z-index: inherit; */
 }
@@ -82,14 +101,14 @@ body{
     font-size: 17px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
+    color: #e8e5e3;
 }
 
 .line{
     width: 33px;
     height: 4px;
     margin: 5px 3px;
-    background-color: #fff;
+    background-color: #e8e5e3;
 }
 
 .burger{
@@ -114,6 +133,7 @@ body{
     /* top: -75px; */
     /* z-index: -1; */
     margin-bottom: 3rem;
+    flex-direction: column;
 }
 
 .intro{
@@ -121,6 +141,28 @@ body{
     font-size: 2em;
     text-align: center;
     margin: 0 0 25vh 0;
+}
+
+.blog{
+    display: flex;
+    height: 50vh;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.blog_logo{
+    max-width: 362px;
+    max-height: 256px;
+}
+
+.subtext{
+    font-size: 1.5em;
+    text-align: center;
 }
 
 @media only screen and (max-width: 750px){
@@ -157,6 +199,18 @@ body{
         display: block;
     }
     .background{
-        height: 70vh;
+        height: 50%;
+    }
+    .mainHeading{
+        padding: 0;
+        width: 100%;
+        height: 75%;
+    }
+    .heading{
+        font-size: 2.5rem;
+        margin: 1em;
+    }
+    .arrow{
+        margin: 0;
     }
 }
