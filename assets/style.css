@@ -23,7 +23,7 @@ body{
     z-index: 1;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(8px);
 }
 
 .navWhite{
@@ -51,7 +51,7 @@ body{
     color: #e8e5e3;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     height: 80%;
-    padding: 50vh 100px;
+    padding: 40vh 100px;
     padding-bottom: 0;
     width: 60%;
     flex-direction: column;
@@ -70,31 +70,47 @@ body{
     height: 25px;
     width: 25px;
     margin-left: 40vw;
+    margin-top: 5vh;
 }
 
 .front-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .side-column{
     display: flex;
     width: auto;
-    height: 100%;
+    height: 95%;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    position: fixed;
+    right: 0;
 }
 
-.nav-list{
+.side-column a{
+    color: #e8e5e3;
+    text-decoration: none;
+}
+
+.side-column i{
     display: flex;
-    padding: 0 100px 0 654px;
-    /* background-color: antiquewhite; */
-    /* z-index: inherit; */
+    font-size: 30px;
+    margin: 1em;
 }
 
 .nav-list li{
     display: flex;
     line-height: 80px;
     margin: 0 40px;
-    align-items: right;
+}
+
+.nav-list li a{
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
 }
 
 .nav-list li a{
@@ -165,6 +181,12 @@ body{
     text-align: center;
 }
 
+.footer a{
+    color: #e8e5e3;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
 @media only screen and (max-width: 750px){
     .logo{
         font-size: 30px;
@@ -187,13 +209,13 @@ body{
         left: 0;
         text-align: center;
         transition: all 0.5s;
-        background-color: #fff;
+        background-color: #000;
     }
     .nav-list li{
         display: block;
     }
     .nav-list li a{
-        color: #000;
+        color: #e8e5e3;
     }
     #check:checked ~ .nav-list{
         display: block;
@@ -212,5 +234,19 @@ body{
     }
     .arrow{
         margin: 0;
+    }
+}
+
+@media only screen and (min-width: 750px){
+    .nav-list{
+        display: flex;
+        padding: 0 100px 0 654px;
+    }
+    
+    .nav-list li{
+        display: flex;
+        line-height: 80px;
+        margin: 0 40px;
+        align-items: right;
     }
 }
