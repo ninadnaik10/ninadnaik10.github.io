@@ -231,11 +231,16 @@ body{
     }
     .background{
         height: 50%;
+        margin-bottom: 25vh;
     }
     .mainHeading{
         padding: 0;
         width: 100%;
         height: 75%;
+    }
+
+    .intro{
+        padding: 1em;
     }
     
     .arrow{
