@@ -122,7 +122,7 @@ body{
 
 .line{
     width: 33px;
-    height: 4px;
+    height: 2px;
     margin: 5px 3px;
     background-color: #e8e5e3;
 }
@@ -159,7 +159,7 @@ body{
     margin: 0 0 25vh 0;
 }
 
-.blog{
+/* .blog{
     display: flex;
     height: 50vh;
     width: 50vw;
@@ -179,12 +179,21 @@ body{
 .subtext{
     font-size: 1.5em;
     text-align: center;
-}
+} */
 
 .footer a{
     color: #e8e5e3;
     text-decoration: none;
     border-bottom: 1px dotted;
+}
+
+.footer i{
+    margin-right: 5px;
+}
+
+.email{
+    text-align: center;
+    margin: 1em;
 }
 
 @media only screen and (max-width: 750px){
@@ -228,12 +237,26 @@ body{
         width: 100%;
         height: 75%;
     }
+    
+    .arrow{
+        margin: 0;
+    }
+    .front-container{
+        flex-direction: column;
+    }
+    .side-column{
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 750px){
     .heading{
         font-size: 2.5rem;
         margin: 1em;
-    }
-    .arrow{
-        margin: 0;
     }
 }
 
