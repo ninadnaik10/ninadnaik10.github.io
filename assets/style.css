@@ -82,7 +82,7 @@ body{
 .side-column{
     display: flex;
     width: auto;
-    height: 95%;
+    height: 75%;
     align-items: flex-end;
     flex-direction: column-reverse;
     position: fixed;
@@ -231,7 +231,7 @@ body{
     }
     .background{
         height: 50%;
-        margin-bottom: 25vh;
+        margin-bottom: 10vh;
     }
     .mainHeading{
         padding: 0;
