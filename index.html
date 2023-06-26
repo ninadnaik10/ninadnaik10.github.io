@@ -9,14 +9,17 @@
     <!-- Primary Meta Tags -->
     <title>Ninad Naik - Portfolio</title>
     <meta name="title" content="Ninad Naik - Portfolio">
-    <meta name="description" content="Hello! My name is Ninad Naik. I'm interested in Programming and Astronomy.">
-    <meta name="keywords" content="Ninad Naik, Ninad Naik portfolio, ninadnaik.in, Ninad Naik Github, Ninad's Blog, Ninad Naik twitter">
+    <meta name="description" content="Hello! I am Ninad Naik, a Software Developer. I have a keen interest in Web and
+            App Development. I enjoy exploring and tinkering new things and meet new people. I love to learn about Astronomy.">
+    <meta name="keywords"
+        content="Ninad Naik, Ninad Naik portfolio, ninadnaik.in, Ninad Naik Github, Ninad's Blog, Ninad Naik twitter">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ninadnaik.in/">
     <meta property="og:title" content="Ninad Naik - Portfolio">
     <meta property="og:description"
-        content="Hello! My name is Ninad Naik. I'm interested in Programming and Astronomy.">
+        content="Hello! I am Ninad Naik, a Software Developer. I have a keen interest in Web and
+            App Development. I enjoy exploring and tinkering new things and meet new people. I love to learn about Astronomy.">
     <meta property="og:image" content="https://github.com/ninadnaik10/portfolio/blob/main/metalogo.png?raw=true">
 
     <!-- Twitter -->
@@ -24,12 +27,14 @@
     <meta property="twitter:url" content="https://ninadnaik.in/">
     <meta property="twitter:title" content="Ninad Naik - Portfolio">
     <meta property="twitter:description"
-        content="Hello! My name is Ninad Naik. I'm interested in Programming and Astronomy.">
+        content="Hello! I am Ninad Naik, a Software Developer. I have a keen interest in Web and
+            App Development. I enjoy exploring and tinkering new things and meet new people. I love to learn about Astronomy.">
     <meta property="twitter:image" content="https://github.com/ninadnaik10/portfolio/blob/main/metalogo.png?raw=true">
     <link rel="stylesheet" href="./assets/style.css">
-    <script async src="https://use.fontawesome.com/2d5e1d92db.js"></script>
+    <script src="https://kit.fontawesome.com/c24595dcda.js" crossorigin="anonymous"></script>
     <link rel="icon" href=" /logo.ico" type="image/x-icon" sizes="48×48 144×144">
     <link rel="shortcut icon" type="image/x-icon" href=" /logo.ico" sizes="32×32 48×48">
+    <link rel="stylesheet" href="./assets/card.css">
 </head>
 
 <body>
@@ -45,13 +50,15 @@
         <label class="logo"><a href="#"><img src="logo-white.png" class="logo-a"></a></label>
         <ul class="nav-list">
             <li><a href="#about">About</a></li>
-            <li><a href="https://blog.ninadnaik.in" target="_blank">Blog</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="https://ninadblog.github.io" target="_blank">Blog</a></li>
+            <li><a href="https://ninadnaik10.github.io/resume" target="_blank">Resume</a></li>
         </ul>
     </nav>
     <section class="background">
         <div class="front-container">
             <div class="mainHeading">
-                <p class="heading">I am a <i>Tech-Enthusiast</i>.</p>
+                <p class="heading">Technology. Software.</p>
                 <div class="side-column">
                     <a href="https://instagram.com/ninadnaik07" target="_blank"><i class="fa fa-instagram"></i></a>
                     <a href="https://twitter.com/ninadnaik07" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -64,15 +71,113 @@
         </div>
     </section>
     <section class="content">
-        <div class="intro" id="about">Hello! My name is Ninad Naik. I'm interested in Programming and Astronomy. </div>
-        <!-- <div class="blog" id="blog">
-            <img src="blog_logo.png" alt="Ninad's Blog Logo" class="blog_logo">
-            <p class="subtext">This is my blog page where I write stuffs, share knowledge and describe my experience</p>
-        </div> -->
+        <h1 class="title">About</h1>
+        <div class="intro" id="about">Hello! I am Ninad Naik, a Software Developer. I have a keen interest in Web and
+            App Development. I enjoy exploring and tinkering new things and meet new people. I love to learn about Astronomy.</div>
+    </section>
+    <section class="projects">
+        <h1 class="title" id="projects">
+            Projects
+        </h1>
+        <div class="card-container">
+            <div class="card">
+                <figure class="article-image">
+                    <img src="./images/newsf.jpg">
+                </figure>
+                <div class="article-content">
+                    <span class="class-tech">Flutter</span>
+                    <span class="class-tech">REST APIs </span>
+                    <h3 class="card-title">News Forecast</h3>
+                    <div class="card-desc">
+                        <p>An Android app to get weather and news updates built using material design and uses APIs to
+                            fetch data.</p><br>
+                        <p>It provides weather insights – Temperature, condition, wind speed, humidity, visibility and
+                            news previews.</p>
+                    </div>
+                    <div class="card-icons">
+                        <a href="https://github.com/ninadnaik10/news-forecast"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="article-image">
+                    <img src="./images/speaksure.png">
+                </figure>
+                <div class="article-content">
+                    <span class="class-tech">Python</span>
+                    <span class="class-tech">MongoDB</span>
+                    <span class="class-tech">Kivy</span>
+                    <span class="class-tech">scikit-learn</span>
+                    <span class="class-tech">Librosa</span>
+                    <h3 class="card-title">SpeakSure</h3>
+                    <div class="card-desc">
+                        <p>An AI Public Speaking Practice app to measure and track public speaking skills</p><br>
+                        <p>It measures speech metrics — filler words, speech pace, confidence level and gives feedback
+                        </p>
+                    </div>
+                    <div class="card-icons">
+                        <a href="https://github.com/ninadnaik10/SpeakSure"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="article-image">
+                    <img src="./images/passvault.jpg">
+                </figure>
+                <div class="article-content">
+                    <span class="class-tech">Java</span>
+                    <span class="class-tech">Swing</span>
+                    <span class="class-tech">SQLite</span>
+                    <h3 class="card-title">PassVault</h3>
+                    <div class="card-desc">
+                        <p>A desktop application to generate and store passwords locally.</p><br>
+                        <p>Implemented SHA256 Hashing and AES algorithm for security.</p>
+                    </div>
+                    <div class="card-icons">
+                        <a href="https://github.com/ninadnaik10/PassVault"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="article-image">
+                    <img src="./images/expense.jpg">
+                </figure>
+                <div class="article-content">
+                    <span class="class-tech">Flutter</span>
+                    <h3 class="card-title">Expense Splitter</h3>
+                    <div class="card-desc">
+                        <p>A simple Android app to help you split the expense among friends made with Flutter.</p><br>
+                        <p>It shows how much a person pays to another.</p><br>
+                    </div>
+                    <div class="card-icons">
+                        <a href="https://github.com/ninadnaik10/Expense-Splitter" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://ninadnaik10.github.io/expense-splitter-web/" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="article-image">
+                    <img src="./images/blog_logo.png">
+                </figure>
+                <div class="article-content">
+                    <span class="class-tech">HTML</span>
+                    <span class="class-tech">CSS</span>
+                    <span class="class-tech">JavaScript</span>
+                    <h3 class="card-title">Ninad's Blog</h3>
+                    <div class="card-desc">
+                        <p>Made a responsive and static blogging site to post my blogs.</p>
+                    </div>
+                    <div class="card-icons">
+                        <a href="https://github.com/ninadblog/ninadblog.github.io" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://ninadblog.github.io" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="footer">
         <p class="email"><i class="fa fa-envelope"></i><a
-                href="mailto:contact&commat;ninadnaik.in">contact&commat;ninadnaik.in</a></p>
+                href="mailto:ninadnaik07&commat;gmail.com">ninadnaik07&commat;gmail.com</a></p>
     </footer>
 </body>
 
