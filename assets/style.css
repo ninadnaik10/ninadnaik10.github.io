@@ -100,6 +100,10 @@ body{
     margin: 1em;
 }
 
+.burger-label{
+    display: none;
+}
+
 .nav-list li{
     display: flex;
     line-height: 80px;
@@ -216,13 +220,13 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 950px){
     .logo{
         font-size: 30px;
         padding:8px 0 0 25px;
         color: #000;
     }
-    .burger{
+    .burger, .burger-label{
         display: block;
     }
     .navbar{
@@ -286,10 +290,17 @@ body{
     }
 }
 
-@media only screen and (min-width: 750px){
+@media only screen and (min-width: 950px){
+
+    .navbar{
+        justify-content: space-between;
+
+    }
+
     .nav-list{
         display: flex;
-        padding: 0 100px 0 654px;
+        padding: 0 100px 0 0;
+        /* padding: 0 100px 0 654px; */
     }
     
     .nav-list li{

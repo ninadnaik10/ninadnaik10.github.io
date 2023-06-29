@@ -65,6 +65,10 @@
     font-weight: 200;
 }
 
+.card-icons{
+    padding: 0 0 2rem 2rem;
+}
+
 .card-icons i{
     margin: 1rem 1rem 0 0;
     font-size: 1.7em;
