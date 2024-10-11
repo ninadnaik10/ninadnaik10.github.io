@@ -65,6 +65,12 @@
   font-size: 2rem;
 }
 
+.card-subtitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
 .card-ex {
   position: relative;
   font-size: 1rem;
