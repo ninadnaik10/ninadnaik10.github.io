@@ -3,6 +3,33 @@
   max-width: calc(100% - 80px);
 }
 
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.1),
+    transparent 50%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(277px, 1fr));
@@ -12,7 +39,7 @@
 .article-image {
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
   background-size: cover;
   background: center center no-repeat;
   /* min-height: 15rem; */
